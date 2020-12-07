@@ -11,29 +11,6 @@ export class PaymentDetailService {
 
   readonly baseURL = 'http://localhost:61236/api/PaymentDetail'
   formData: PaymentDetail = new PaymentDetail();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   list: PaymentDetail[];
 
   postPaymentDetail() {
