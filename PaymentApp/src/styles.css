@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+.form-group label {
+    color: grey;
+  }
+  
+  .form-group input {
+    font-weight: 500;
+  }
+  
+  .form-group input::placeholder {
+    color: #c0bdbd;
+    font-weight: 300;
+  }
+  
+  thead th{
+    font-weight: 400;
+  }
+  
+  table tbody tr:hover {
+    background-color: #fffbf2;
+    cursor: pointer;
+  }
+  
+  /*for invalid form controls*/
+  input.invalid {
+    border-color: red;
+  }
