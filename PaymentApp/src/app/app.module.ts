@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { PaymentDetailFormComponent } from './payment-details/payment-detail-form/payment-detail-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaymentDetailsComponent,
-    PaymentDetailFormComponent
+    PaymentDetailFormComponent,
+    DepartmentDetailComponent
   ],
   imports: [
     BrowserModule,
