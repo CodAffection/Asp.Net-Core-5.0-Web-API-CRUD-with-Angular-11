@@ -1,1 +1,28 @@
-<p>department-detail works!</p>
+<div class="jumbotron py-3">
+  <h1 class="display-4 text-center"> Department </h1>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <app-department-detail-form></app-department-detail-form>
+  </div>
+  <div class="col-md-6">
+    <table class="table">
+      <thead class="thead-light">
+          <tr>
+              <th>Name</th>
+
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let pd of service.list">
+              <td (click)="populateForm(pd)">{{pd.name}}</td>
+
+              <td>
+                  <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.id)"></i>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>

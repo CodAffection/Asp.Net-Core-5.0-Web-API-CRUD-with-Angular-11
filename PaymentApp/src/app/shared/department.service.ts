@@ -18,7 +18,8 @@ export class DepartmentService {
   }
 
   putDepartment(){
-    return this._http.put(`${this.baseUrl}/${this.formData.Id}`,this.formData);
+    debugger
+    return this._http.put(`${this.baseUrl}/${this.formData.id}`,this.formData);
   }
   deleteDepartment(id: number){
     return this._http.delete(`${this.baseUrl}/${id}`);
